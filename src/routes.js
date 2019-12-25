@@ -7,4 +7,4 @@ const UserController = require('./controllers/userController')
 routes.get("/users", UserController.findClient)
 routes.post('/users', UserController.createClient)
 
-module.exports = routes
+module.exports = routes;
