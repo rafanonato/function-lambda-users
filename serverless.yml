@@ -67,8 +67,11 @@ functions:
 #    Check the event documentation for details
     events:
       - http:
-          path: api/users
+          path: users
           method: get
+      - http:
+          path: users
+          method: post
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)

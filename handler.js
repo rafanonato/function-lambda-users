@@ -12,8 +12,7 @@ const app = express();
   requireDir('./src/models')
   app.use(express.json())
   
-  routes.get('/api', require('./src/routes'))
+  app.use('/', routes)
 
   return event
-
 }
